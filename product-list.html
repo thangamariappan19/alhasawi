@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>E Store - eCommerce HTML Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="AlHasawi Template" name="keywords">
+        <meta content="AlHasawi Template" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+        
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/checkout.css" rel="stylesheet">
+    </head>
+
+    <body>
+      
+         <!-- Nav Bar Start -->
+         <div class="nav">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <a href="#" class="navbar-brand">MENU</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto">
+                            <a href="index.html" class="nav-item nav-link active">Home</a>
+                            <a href="product-list.html" class="nav-item nav-link">Products</a>
+                            <a href="product-detail.html" class="nav-item nav-link">Product Detail</a>
+                            <a href="cart.html" class="nav-item nav-link">Cart</a>
+                          
+                            <a href="my-account.html" class="nav-item nav-link">My Account</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">More Pages</a>
+                                <div class="dropdown-menu">
+                                    
+                                    <a href="login.html" class="dropdown-item">Login & Register</a>
+                                    <a href="contact.html" class="dropdown-item">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navbar-nav ml-auto">
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">User Account</a>
+                                <div class="dropdown-menu">
+                                    <a href="#" class="dropdown-item">Login</a>
+                                    <a href="#" class="dropdown-item">Register</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Nav Bar End -->      
+        
+        <!-- Bottom Bar Start -->
+        <div class="super_container">
+            <!-- Header -->
+            <header class="header">
+                <!-- Top Bar -->
+                <div class="top_bar">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col d-flex flex-row">
+                                <div class="top_bar_contact_item">
+                                    <div class="top_bar_icon"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918577/phone.png" alt=""></div>800 275 223
+                                </div>
+                                <div class="top_bar_contact_item">
+                                    <div class="top_bar_icon"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918597/mail.png" alt=""></div><a href="">contact@alhasawi.com</a>
+                                </div>
+                                <div class="top_bar_content ml-auto">
+                                    <div class="top_bar_menu">
+                                        <ul class="standard_dropdown top_bar_dropdown">
+                                            <li> <a href="#">English<i class="fas fa-chevron-down"></i></a>
+                                                <ul>
+                                                    <li><a href="#">Arabic</a></li>
+                                                </ul>
+                                            </li>
+                                            <li> <a href="#">د.ك KD<i class="fas fa-chevron-down"></i></a>
+                                                <ul>
+                                                    <li><a href="#">$ USD</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="top_bar_user">
+                                        <div class="user_icon"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918647/user.svg" alt=""></div>
+                                        <div><a href="login.html">Register</a></div>
+                                        <!-- <div><a href="login.html">Sign in</a></div> -->
+                                        <div><a href="contact.html">Contact Us</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- Header Main -->
+                <div class="header_main">
+                    <div class="container">
+                        <div class="row">
+                            <!-- Logo -->
+                            <div class="col-lg-2 col-sm-3 col-3 order-1">
+                                <div class="logo_container">
+                                    <div class="logo"><a href="index.html">Al Hasawi</a></div>
+                                </div>
+                            </div> <!-- Search -->
+                            <div class="col-lg-6 col-12 order-lg-2 order-3 text-lg-left text-right">
+                                <div class="header_search">
+                                    <div class="header_search_content">
+                                        <div class="header_search_form_container">
+                                            <form action="#" class="header_search_form clearfix"> <input type="search" required="required" class="header_search_input" placeholder="Search for products...">
+                                                <div class="custom_dropdown" style="display: none;">
+                                                    <!-- <div class="custom_dropdown_list"> <span class="custom_dropdown_placeholder clc">All Categories</span> <i class="fas fa-chevron-down"></i>
+                                                        <ul class="custom_list clc">
+                                                            <li><a class="clc" href="#">All Categories</a></li>
+                                                            <li><a class="clc" href="#">Computers</a></li>
+                                                            <li><a class="clc" href="#">Laptops</a></li>
+                                                            <li><a class="clc" href="#">Cameras</a></li>
+                                                            <li><a class="clc" href="#">Hardware</a></li>
+                                                            <li><a class="clc" href="#">Smartphones</a></li>
+                                                        </ul>
+                                                    </div> -->
+                                                </div> <button type="submit" class="header_search_button trans_300" value="Submit"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918770/search.png" alt=""></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- Wishlist -->
+                            <div class="col-lg-4 col-9 order-lg-3 order-2 text-lg-left text-right">
+                                <div class="wishlist_cart d-flex flex-row align-items-center justify-content-end">
+                                    <div class="wishlist d-flex flex-row align-items-center justify-content-end">
+                                        <div class="wishlist_icon"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918681/heart.png" alt=""></div>
+                                        <div class="wishlist_content">
+                                            <div class="wishlist_text"><a href="#">Wishlist</a></div>
+                                            <div class="wishlist_count">10</div>
+                                        </div>
+                                    </div> <!-- Cart -->
+                                    <div class="cart">
+                                        <div class="cart_container d-flex flex-row align-items-center justify-content-end">
+                                            <div class="cart_icon"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918704/cart.png" alt="">
+                                                <div class="cart_count"><span>3</span></div>
+                                            </div>
+                                            <div class="cart_content">
+                                                <div class="cart_text"><a href="#">Cart</a></div>
+                                                <div class="cart_price">$185</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- Main Navigation -->
+                
+            </header>
+        </div>
+
+                
+                <!-- ========================= SECTION CONTENT ========================= -->
+                <section class="section-content padding-y">
+                <div class="container-fluid">
+                
+                <div class="row">
+                    <aside class="col-md-3">
+                        
+                <div class="card">
+                    <article class="filter-group">
+                        <header class="card-header">
+                            <a href="#" data-toggle="collapse" data-target="#collapse_1" aria-expanded="true" class="">
+                                <i class="icon-control fa fa-chevron-down"></i>
+                                <h6 class="title">Product type</h6>
+                            </a>
+                        </header>
+                        <div class="filter-content collapse show" id="collapse_1">
+                            <div class="card-body">
+                                <!-- <form class="pb-3">
+                                <div class="input-group">
+                                  <input type="text" class="form-control" placeholder="Search">
+                                  <div class="input-group-append">
+                                    <button class="btn btn-light" type="button"><i class="fa fa-search"></i></button>
+                                  </div>
+                                </div>
+                                </form> -->
+                                
+                                <ul class="list-menu">
+                                    <li class="active"><a href="#" >REFRIGITATOR </a><span>(45)</span></li>
+                                    <li><a href="#">WASHER & DRYER </a><span>(34)</span></li>
+                                    <li><a href="#">COOKING </a><span>(67)</span></li>
+                                    <li><a href="#">AIRCONDITIONER</a><span>(74)</span></li>
+                                    <li><a href="#">SMART APPLIANCE </a><span>(89)</span></li>
+                                    <li><a href="#">OUTDOOR COOKING</a><span>(28)</span></li>
+                                    <li><a href="#">OUTDOOR GRILL</a><span>(28)</span></li>
+                                </ul>
+                
+                            </div> <!-- card-body.// -->
+                        </div>
+                    </article> <!-- filter-group  .// -->
+                    <article class="filter-group">
+                        <header class="card-header">
+                            <a href="#" data-toggle="collapse" data-target="#collapse_2" aria-expanded="true" class="">
+                                <i class="icon-control fa fa-chevron-down"></i>
+                                <h6 class="title">Brands </h6>
+                            </a>
+                        </header>
+                        <div class="filter-content collapse show" id="collapse_2" style="">
+                            <div class="card-body">
+                                <label class="custom-control custom-checkbox">
+                                  <input type="checkbox" checked="" class="custom-control-input">
+                                  <div class="custom-control-label">LG  
+                                      <b class="badge badge-pill badge-light float-right">120</b>  </div>
+                                </label>
+                                <label class="custom-control custom-checkbox">
+                                  <input type="checkbox" checked="" class="custom-control-input">
+                                  <div class="custom-control-label">Whirpool 
+                                      <b class="badge badge-pill badge-light float-right">15</b>  </div>
+                                </label>
+                                <label class="custom-control custom-checkbox">
+                                  <input type="checkbox" checked="" class="custom-control-input">
+                                  <div class="custom-control-label">Samsung 
+                                      <b class="badge badge-pill badge-light float-right">35</b> </div>
+                                </label>
+                                <label class="custom-control custom-checkbox">
+                                  <input type="checkbox" checked="" class="custom-control-input">
+                                  <div class="custom-control-label">Godrej 
+                                      <b class="badge badge-pill badge-light float-right">89</b> </div>
+                                </label>
+                                <label class="custom-control custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input">
+                                  <div class="custom-control-label">Onida 
+                                      <b class="badge badge-pill badge-light float-right">30</b>  </div>
+                                </label>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <div class="custom-control-label">Sansui 
+                                        <b class="badge badge-pill badge-light float-right">30</b>  </div>
+                                  </label>
+                    </div> <!-- card-body.// -->
+                        </div>
+                    </article> <!-- filter-group .// -->
+                    <article class="filter-group">
+                        <header class="card-header">
+                            <a href="#" data-toggle="collapse" data-target="#collapse_3" aria-expanded="true" class="">
+                                <i class="icon-control fa fa-chevron-down"></i>
+                                <h6 class="title">Price range </h6>
+                            </a>
+                        </header>
+                        <div class="filter-content collapse show" id="collapse_3" style="">
+                            <div class="card-body">
+                                <input type="range" class="custom-range" min="0" max="100" name="">
+                                <div class="form-row">
+                                <div class="form-group col-md-6">
+                                  <label>Min</label>
+                                  <input class="form-control" placeholder="$0" type="number">
+                                </div>
+                                <div class="form-group text-right col-md-6">
+                                  <label>Max</label>
+                                  <input class="form-control" placeholder="$1,0000" type="number">
+                                </div>
+                                </div> <!-- form-row.// -->
+                                <button class="btn btn-block btn-primary">Apply</button>
+                            </div><!-- card-body.// -->
+                        </div>
+                    </article> <!-- filter-group .// -->
+                   
+                    <article class="filter-group">
+                        <header class="card-header">
+                            <a href="#" data-toggle="collapse" data-target="#collapse_5" aria-expanded="false" class="">
+                                <i class="icon-control fa fa-chevron-down"></i>
+                                <h6 class="title">More filter </h6>
+                            </a>
+                        </header>
+                        <div class="filter-content collapse in" id="collapse_5" style="">
+                            <div class="card-body">
+                                <label class="custom-control custom-radio">
+                                  <input type="radio" name="myfilter_radio" checked="" class="custom-control-input">
+                                  <div class="custom-control-label">Any condition</div>
+                                </label>
+                
+                                <label class="custom-control custom-radio">
+                                  <input type="radio" name="myfilter_radio" class="custom-control-input">
+                                  <div class="custom-control-label">Brand new </div>
+                                </label>
+                
+                                <label class="custom-control custom-radio">
+                                  <input type="radio" name="myfilter_radio" class="custom-control-input">
+                                  <div class="custom-control-label">Used items</div>
+                                </label>
+                
+                                <label class="custom-control custom-radio">
+                                  <input type="radio" name="myfilter_radio" class="custom-control-input">
+                                  <div class="custom-control-label">Very old</div>
+                                </label>
+                            </div><!-- card-body.// -->
+                        </div>
+                    </article> <!-- filter-group .// -->
+                </div> <!-- card.// -->
+                
+                    </aside> <!-- col.// -->
+                    <main class="col-md-9">
+                
+                <header class="border-bottom mb-4 pb-3">
+                        <div class="form-inline">
+                            <span class="mr-md-auto">32 Items found </span>
+                            <select class="mr-2 form-control search-control ">
+                                <option>Latest items</option>
+                                <option>Trending</option>
+                                <option>Most Popular</option>
+                                <option>Cheapest</option>
+                            </select>
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-outline-secondary active" data-toggle="tooltip" title="List view"> 
+                                    <i class="fa fa-bars"></i></a>
+                                <a href="#" class="btn  btn-outline-secondary" data-toggle="tooltip" title="Grid view"> 
+                                    <i class="fa fa-th"></i></a>
+                            </div>
+                        </div>
+                </header><!-- sect-heading -->
+                
+                
+               
+                    <div class="row">
+                     
+                        <div class="col-md-3">
+                            <figure class="card card-product-grid">
+                                <div class="img-wrap">
+
+                                    <span class="badge badge-danger"> NEW </span>
+                                    <img src="img/refirigitator/Water Cooler 4 Tap - Closed Type.jpg">
+                                </div> <!-- img-wrap.// -->
+                                <figcaption class="info-wrap">
+                                    <div class="fix-height">
+                                        <a href="product-detail.html" class="title">Water Cooler 4 Tap - Closed Type</a>
+                                        <div class="price-wrap mt-2">
+                                            <span class="price">$1280</span>
+                                            <del class="price-old">$1980</del>
+                                            <ul class="rating-stars float-right">
+                                                <li class="stars-active">
+                                                    <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </li>
+
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="container" style="display: grid;">
+                                        <span class="wislist-icon"> <a href="product-detail.html" class="btn btn-block btn-primary"><i
+                                                    class="fa fa-heart"></i>Add to Wishlist</a></span>
+                                        <span class="cart-icon"> <a href="cart.html" class="btn btn-block btn-primary"><i
+                                                    class="fa fa-shopping-cart"></i>Add to Cart</a></span>
+                                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div> <!-- col.// -->
+
+                        <div class="col-md-3">
+                            <figure class="card card-product-grid">
+                                <div class="img-wrap">
+
+                                    <span class="badge badge-danger"> NEW </span>
+                                    <img src="img/refirigitator/Water Cooler 1 Tap - Black Faucet  Closed Type.jpg">
+                                </div> <!-- img-wrap.// -->
+                                <figcaption class="info-wrap">
+                                    <div class="fix-height">
+                                        <a href="product-detail.html" class="title">Water Cooler 1 Tap - Black Faucet  Closed Type</a>
+                                        <div class="price-wrap mt-2">
+                                            <span class="price">$1280</span>
+                                            <del class="price-old">$1980</del>
+                                            <ul class="rating-stars float-right">
+                                                <li class="stars-active">
+                                                    <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </li>
+
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="container" style="display: grid;">
+                                        <span class="wislist-icon"> <a href="product-detail.html" class="btn btn-block btn-primary"><i
+                                                    class="fa fa-heart"></i>Add to Wishlist</a></span>
+                                        <span class="cart-icon"> <a href="cart.html" class="btn btn-block btn-primary"><i
+                                                    class="fa fa-shopping-cart"></i>Add to Cart</a></span>
+                                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div> <!-- col.// -->
+
+                        <div class="col-md-3">
+                            <figure class="card card-product-grid">
+                                <div class="img-wrap">
+
+                                    <span class="badge badge-danger"> NEW </span>
+                                    <img src="img/refirigitator/Water Cooler 1 Tap - Black Faucet.jpg">
+                                </div> <!-- img-wrap.// -->
+                                <figcaption class="info-wrap">
+                                    <div class="fix-height">
+                                        <a href="product-detail.html" class="title">Water Cooler 1 Tap - Black Faucet</a>
+                                        <div class="price-wrap mt-2">
+                                            <span class="price">$1280</span>
+                                            <del class="price-old">$1980</del>
+                                            <ul class="rating-stars float-right">
+                                                <li class="stars-active">
+                                                    <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </li>
+
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="container" style="display: grid;">
+                                        <span class="wislist-icon"> <a href="product-detail.html" class="btn btn-block btn-primary"><i
+                                                    class="fa fa-heart"></i>Add to Wishlist</a></span>
+                                        <span class="cart-icon"> <a href="cart.html" class="btn btn-block btn-primary"><i
+                                                    class="fa fa-shopping-cart"></i>Add to Cart</a></span>
+                                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div> <!-- col.// -->
+
+                        <div class="col-md-3">
+                            <figure class="card card-product-grid">
+                                <div class="img-wrap">
+
+                                    <span class="badge badge-danger"> NEW </span>
+                                    <img src="img/refirigitator/Table Top Water Cooler - 1 Tap.jpg">
+                                </div> <!-- img-wrap.// -->
+                                <figcaption class="info-wrap">
+                                    <div class="fix-height">
+                                        <a href="product-detail.html" class="title">Table Top Water Cooler - 1 Tap</a>
+                                        <div class="price-wrap mt-2">
+                                            <span class="price">$1280</span>
+                                            <del class="price-old">$1980</del>
+                                            <ul class="rating-stars float-right">
+                                                <li class="stars-active">
+                                                    <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </li>
+
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="container" style="display: grid;">
+                                        <span class="wislist-icon"> <a href="product-detail.html" class="btn btn-block btn-primary"><i
+                                                    class="fa fa-heart"></i>Add to Wishlist</a></span>
+                                        <span class="cart-icon"> <a href="cart.html" class="btn btn-block btn-primary"><i
+                                                    class="fa fa-shopping-cart"></i>Add to Cart</a></span>
+                                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div> <!-- col.// -->
+
+                        <div class="col-md-3">
+                            <figure class="card card-product-grid">
+                                <div class="img-wrap">
+
+                                    <span class="badge badge-danger"> NEW </span>
+                                    <img src="img/refirigitator/12G Galvanized Water Heater - Horizontal.jpg">
+                                </div> <!-- img-wrap.// -->
+                                <figcaption class="info-wrap">
+                                    <div class="fix-height">
+                                        <a href="product-detail.html" class="title">12G Galvanized Water Heater - Horizontal</a>
+                                        <div class="price-wrap mt-2">
+                                            <span class="price">$1280</span>
+                                            <del class="price-old">$1980</del>
+                                            <ul class="rating-stars float-right">
+                                                <li class="stars-active">
+                                                    <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </li>
+
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="container" style="display: grid;">
+                                        <span class="wislist-icon"> <a href="product-detail.html" class="btn btn-block btn-primary"><i
+                                                    class="fa fa-heart"></i>Add to Wishlist</a></span>
+                                        <span class="cart-icon"> <a href="cart.html" class="btn btn-block btn-primary"><i
+                                                    class="fa fa-shopping-cart"></i>Add to Cart</a></span>
+                                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div> <!-- col.// -->
+
+                        <div class="col-md-3">
+                            <figure class="card card-product-grid">
+                                <div class="img-wrap">
+
+                                    <span class="badge badge-danger"> NEW </span>
+                                    <img src="img/refirigitator/12G Galvanized Water Heater - Vertical.jpg">
+                                </div> <!-- img-wrap.// -->
+                                <figcaption class="info-wrap">
+                                    <div class="fix-height">
+                                        <a href="product-detail.html" class="title">12G Galvanized Water Heater - Vertical</a>
+                                        <div class="price-wrap mt-2">
+                                            <span class="price">$1280</span>
+                                            <del class="price-old">$1980</del>
+                                            <ul class="rating-stars float-right">
+                                                <li class="stars-active">
+                                                    <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </li>
+
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="container" style="display: grid;">
+                                        <span class="wislist-icon"> <a href="product-detail.html" class="btn btn-block btn-primary"><i
+                                                    class="fa fa-heart"></i>Add to Wishlist</a></span>
+                                        <span class="cart-icon"> <a href="cart.html" class="btn btn-block btn-primary"><i
+                                                    class="fa fa-shopping-cart"></i>Add to Cart</a></span>
+                                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div> <!-- col.// -->
+
+                        <div class="col-md-3">
+                            <figure class="card card-product-grid">
+                                <div class="img-wrap">
+
+                                    <span class="badge badge-danger"> NEW </span>
+                                    <img src="img/refirigitator/Water Cooler 4 Tap - Closed Type.jpg">
+                                </div> <!-- img-wrap.// -->
+                                <figcaption class="info-wrap">
+                                    <div class="fix-height">
+                                        <a href="product-detail.html" class="title">Water Cooler 4 Tap - Closed Type</a>
+                                        <div class="price-wrap mt-2">
+                                            <span class="price">$1280</span>
+                                            <del class="price-old">$1980</del>
+                                            <ul class="rating-stars float-right">
+                                                <li class="stars-active">
+                                                    <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </li>
+
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="container" style="display: grid;">
+                                        <span class="wislist-icon"> <a href="product-detail.html" class="btn btn-block btn-primary"><i
+                                                    class="fa fa-heart"></i>Add to Wishlist</a></span>
+                                        <span class="cart-icon"> <a href="cart.html" class="btn btn-block btn-primary"><i
+                                                    class="fa fa-shopping-cart"></i>Add to Cart</a></span>
+                                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div> <!-- col.// -->
+
+                        <div class="col-md-3">
+                            <figure class="card card-product-grid">
+                                <div class="img-wrap">
+
+                                    <span class="badge badge-danger"> NEW </span>
+                                    <img src="img/refirigitator/Water Cooler 3 Tap - Closed Type.jpg">
+                                </div> <!-- img-wrap.// -->
+                                <figcaption class="info-wrap">
+                                    <div class="fix-height">
+                                        <a href="product-detail.html" class="title">Water Cooler 3 Tap - Closed Type</a>
+                                        <div class="price-wrap mt-2">
+                                            <span class="price">$1280</span>
+                                            <del class="price-old">$1980</del>
+                                            <ul class="rating-stars float-right">
+                                                <li class="stars-active">
+                                                    <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </li>
+
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="container" style="display: grid;">
+                                        <span class="wislist-icon"> <a href="product-detail.html" class="btn btn-block btn-primary"><i
+                                                    class="fa fa-heart"></i>Add to Wishlist</a></span>
+                                        <span class="cart-icon"> <a href="cart.html" class="btn btn-block btn-primary"><i
+                                                    class="fa fa-shopping-cart"></i>Add to Cart</a></span>
+                                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div> <!-- col.// -->
+                    
+                    </div> <!-- row end.// -->
+                   
+              
+                
+                
+                
+                <nav aria-label="Page navigation sample">
+                  <ul class="pagination" style="justify-content: center;">
+                    <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                  </ul>
+                </nav>
+                
+                    </main> <!-- col.// -->
+                
+                </div>
+                
+                </div> <!-- container .//  -->
+                </section>
+                <!-- ========================= SECTION CONTENT END// ========================= -->
+     <!-- Category Start-->
+      
+                   
+     <div class="semi-footer">
+        <img src="img/semi-footer.jpg" />
+        
+    </div>
+
+
+
+<!-- Category End-->  
+   <!-- Footer Start -->
+   <div class="footer">
+        <div class="container-fluid">
+            <div class="row">
+
+                    <div class="col-lg-2 col-md-4">
+                            <div class="footer-widget">
+                                <h4>AIR CONDITIONER</h4>
+                                <ul>
+                                        <li><a href="#">Samsung</a></li>
+                                        <li><a href="#">LG</a></li>
+                                        <li><a href="#">Whirpool</a></li>
+                                        <li><a href="#">Daikine</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4">
+                                <div class="footer-widget">
+                                        <h4>OUT DOOR KITCHEN</h4>
+                                    <ul>
+                                            <li><a href="#">Built in Grills</a></li>
+                                            <li><a href="#">Freestanding Grills</a></li>
+                                            <li><a href="#">Portable grills</a></li>
+                                            <li><a href="#">Port Mount Grills</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                <div class="col-lg-2 col-md-4">
+                    <div class="footer-widget">
+                            <h4>REFRIGITATOR</h4>
+                        <ul>
+                                <li><a href="#">Samsung</a></li>
+                                <li><a href="#">LG</a></li>
+                                <li><a href="#">Whirpool</a></li>
+                                <li><a href="#">Daikine</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4">
+                    <div class="footer-widget">
+                            <h4>DISH WASHER</h4>
+                        <ul>
+                                <li><a href="#">Built in Dishwashers</a></li>
+                                <li><a href="#">Portable Dishwashers</a></li>
+                                <li><a href="#">Food Disposers</a></li>
+                                <li><a href="#">Trash Compactors</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                        <div class="footer-widget">
+                                <h4>SMART APPLIANCE</h4>
+                            <ul>
+                                    <li><a href="#">Smart Cooking</a></li>
+                                    <li><a href="#">Smart Refrigitators</a></li>
+                                    <li><a href="#">Smart Dishwashers</a></li>
+                                    <li><a href="#">Smart Dryers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                            <div class="footer-widget">
+                                    <h4>FIND YOUR ORDER</h4>
+                                <ul>
+                                        <li><a href="#">Tracking</a></li>
+                                        <li><a href="#">Shipping</a></li>
+                                        <li><a href="#">Payment</a></li>
+                                        <li><a href="#">Lifetime Guarantee</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                   
+            </div>
+            
+            <div class="row payment align-items-center">
+                <div class="col-md-6">
+                    <div class="payment-method">
+                        <h2>We Accept:</h2>
+                        <img src="img/payment-method.png" alt="Payment Method" />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="payment-security">
+                        <h2>Secured By:</h2>
+                        <img src="img/godaddy.svg" alt="Payment Security" />
+                        <img src="img/norton.svg" alt="Payment Security" />
+                        <img src="img/ssl.svg" alt="Payment Security" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+    
+    <!-- Footer Bottom Start -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 copyright">
+                    <p>Copyright &copy; <a href="#">ALHasawi</a>. All Rights Reserved</p>
+                </div>
+
+                <div class="col-md-6 template-by">
+                    <p>Template By <a href="#">ALHasawi</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Bottom End -->        
+    
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/slick/slick.min.js"></script>
+    
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+</html>

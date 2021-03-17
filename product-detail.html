@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>E Store - ALHasawi</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="AlHasawi Template" name="keywords">
+        <meta content="AlHasawi Template" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/checkout.css" rel="stylesheet">
+    </head>
+
+    <body>
+          <!-- Nav Bar Start -->
+          <div class="nav">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                        <a href="#" class="navbar-brand">MENU</a>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+    
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav mr-auto">
+                                <a href="index.html" class="nav-item nav-link active">Home</a>
+                                <a href="product-list.html" class="nav-item nav-link">Products</a>
+                                <a href="product-detail.html" class="nav-item nav-link">Product Detail</a>
+                                <a href="cart.html" class="nav-item nav-link">Cart</a>
+                              
+                                <a href="my-account.html" class="nav-item nav-link">My Account</a>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">More Pages</a>
+                                    <div class="dropdown-menu">
+                                        
+                                        <a href="login.html" class="dropdown-item">Login & Register</a>
+                                        <a href="contact.html" class="dropdown-item">Contact Us</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- Nav Bar End -->      
+            
+            <!-- Bottom Bar Start -->
+            <div class="super_container">
+                <!-- Header -->
+                <header class="header">
+                    <!-- Top Bar -->
+                    <div class="top_bar">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col d-flex flex-row">
+                                    <div class="top_bar_contact_item">
+                                        <div class="top_bar_icon"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918577/phone.png" alt=""></div>800 275 223
+                                    </div>
+                                    <div class="top_bar_contact_item">
+                                        <div class="top_bar_icon"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918597/mail.png" alt=""></div><a href="">contact@alhasawi.com</a>
+                                    </div>
+                                    <div class="top_bar_content ml-auto">
+                                        <div class="top_bar_menu">
+                                            <ul class="standard_dropdown top_bar_dropdown">
+                                                <li> <a href="#">English<i class="fas fa-chevron-down"></i></a>
+                                                    <ul>
+                                                        <li><a href="#">Arabic</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li> <a href="#">د.ك KD<i class="fas fa-chevron-down"></i></a>
+                                                    <ul>
+                                                        <li><a href="#">$ USD</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="top_bar_user">
+                                            <div class="user_icon"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918647/user.svg" alt=""></div>
+                                            <div><a href="login.html">Register</a></div>
+                                            <!-- <div><a href="login.html">Sign in</a></div> -->
+                                            <div><a href="contact.html">Contact Us</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- Header Main -->
+                    <div class="header_main">
+                        <div class="container">
+                            <div class="row">
+                                <!-- Logo -->
+                                <div class="col-lg-2 col-sm-3 col-3 order-1">
+                                    <div class="logo_container">
+                                        <div class="logo"><a href="index.html">Al Hasawi</a></div>
+                                    </div>
+                                </div> <!-- Search -->
+                                <div class="col-lg-6 col-12 order-lg-2 order-3 text-lg-left text-right">
+                                    <div class="header_search">
+                                        <div class="header_search_content">
+                                            <div class="header_search_form_container">
+                                                <form action="#" class="header_search_form clearfix"> <input type="search" required="required" class="header_search_input" placeholder="Search for products...">
+                                                    <div class="custom_dropdown" style="display: none;">
+                                                        <!-- <div class="custom_dropdown_list"> <span class="custom_dropdown_placeholder clc">All Categories</span> <i class="fas fa-chevron-down"></i>
+                                                            <ul class="custom_list clc">
+                                                                <li><a class="clc" href="#">All Categories</a></li>
+                                                                <li><a class="clc" href="#">Computers</a></li>
+                                                                <li><a class="clc" href="#">Laptops</a></li>
+                                                                <li><a class="clc" href="#">Cameras</a></li>
+                                                                <li><a class="clc" href="#">Hardware</a></li>
+                                                                <li><a class="clc" href="#">Smartphones</a></li>
+                                                            </ul>
+                                                        </div> -->
+                                                    </div> <button type="submit" class="header_search_button trans_300" value="Submit"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918770/search.png" alt=""></button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- Wishlist -->
+                                <div class="col-lg-4 col-9 order-lg-3 order-2 text-lg-left text-right">
+                                    <div class="wishlist_cart d-flex flex-row align-items-center justify-content-end">
+                                        <div class="wishlist d-flex flex-row align-items-center justify-content-end">
+                                            <div class="wishlist_icon"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918681/heart.png" alt=""></div>
+                                            <div class="wishlist_content">
+                                                <div class="wishlist_text"><a href="#">Wishlist</a></div>
+                                                <div class="wishlist_count">10</div>
+                                            </div>
+                                        </div> <!-- Cart -->
+                                        <div class="cart">
+                                            <div class="cart_container d-flex flex-row align-items-center justify-content-end">
+                                                <div class="cart_icon"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918704/cart.png" alt="">
+                                                    <div class="cart_count"><span>3</span></div>
+                                                </div>
+                                                <div class="cart_content">
+                                                    <div class="cart_text"><a href="#">Cart</a></div>
+                                                    <div class="cart_price">$185</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- Main Navigation -->
+                    
+                </header>
+            </div>
+            <!-- Bottom Bar End -->       
+            
+        
+        <!-- Product Detail Start -->
+        <div class="product-detail">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                           <!-- ========================= SECTION CONTENT ========================= -->
+                <section class="section-content padding-y bg">
+                    <div class="container">
+                
+                    <article class="card">
+                        <div class="card-body">
+                                <div class="row">
+                                    <aside class="col-md-6">
+                                            <article class="gallery-wrap">
+                                                <div class="card img-big-wrap">
+                                                    <a href="#"> <img src="img/refirigitator/Water Cooler - 1 Tap.jpg"></a>
+                                                </div> <!-- card img-big-wrap.// -->
+                                                <div class="thumbs-wrap">
+                                                    <a href="#" class="item-thumb"> <img src="img/refirigitator/Water Cooler - 1 Tap.jpg"></a>
+                                                    <a href="#" class="item-thumb"> <img src="img/refirigitator/Water Cooler - 1 Tap.jpg"></a>
+                                                    <a href="#" class="item-thumb"> <img src="img/refirigitator/Water Cooler - 2 Tap.jpg"></a>
+                                                    <a href="#" class="item-thumb"> <img src="img/refirigitator/Water Cooler - 2 Tap.jpg"></a>
+                                                </div> <!-- thumbs-wrap .// -->
+                                            </article> <!-- gallery-wrap .end// -->
+                                    </aside>
+                                    <main class="col-md-6">
+                                        <article>
+                                            <!-- <a href="#" class="text-primary btn-link">Clothes</a> -->
+                                            <h3 class="title">Water Cooler - 1 Tap</h3>
+                                            <div>
+                                                <ul class="rating-stars">
+                                                    <li  class="stars-active"> 
+                                                        <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                                                        <i class="fa fa-star"></i>  
+                                                        
+                                                    </li>
+                                                    <li>
+                                                        <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                                                        <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                                                        <i class="fa fa-star"></i> 
+                                                    </li>
+                                                </ul>
+                                                <span class="label-rating mr-3 text-muted">7/10</span>
+                                                <a href="#" class="btn-link  mr-3 text-muted"> <i class="fa fa-heart"></i> Save for later </a>
+                                                <a href="#" class="btn-link text-muted"> <i class="fa fa-book-open"></i> Compare </a>
+                                            </div> 
+                    
+                                            <hr>
+                                
+                                            <div class="mb-3">
+                                                <h6>Short description</h6>
+                                                <ul class="list-dots mb-0">
+                                                    <li>Made in Russia</li>
+                                                    <li>Wolf leather </li>
+                                                    <li>Rubber material bottom</li>
+                                                    <li>Dark blue color</li>
+                                                </ul>
+                                            </div>
+                                            
+                                            <div class="form-group">
+                                                <label class="text-muted">Available sizes</label>
+                                                <div>
+                                                    <label class="js-check btn btn-check active mr-1">
+                                                        <input type="radio" name="option_size" value="option1" checked="">
+                                                        <span>Small</span>
+                                                    </label>
+                                                    <label class="js-check btn btn-check mr-1">
+                                                        <input type="radio" name="option_size" value="option1">
+                                                        <span>Medium</span>
+                                                    </label>
+                                                    <label class="js-check btn btn-check mr-1">
+                                                        <input type="radio" name="option_size" value="option1">
+                                                        <span>Large</span>
+                                                    </label>
+                                                
+                                                </div>            
+                                            </div>
+                    
+                                            <div class="mb-3">
+                                                <var class="price h4">$230.00</var> <br>
+                                                <span class="monthly">$32.00 / monthly <a href="#" class="btn-link">installment </a></span>
+                                            </div> <!-- price-detail-wrap .// -->
+                    
+                                            <div class="mb-4">
+                                                <a href="cart.html" class="btn btn-primary card-btn mr-1">Add to cart</a>
+                                                <a href="cart.html" class="btn btn-light card-wislist">Add to wishilist</a>
+                                            </div>
+                                            
+                                        </article> <!-- product-info-aside .// -->
+                                    </main> <!-- col.// -->
+                                </div> <!-- row.// -->
+                        </div> <!-- card-body.// -->
+                    </article>
+                 
+                    </div>
+                    
+                
+                </section>
+                <!-- ========================= SECTION CONTENT END// ========================= -->
+                
+                        
+                        <div class="row product-detail-bottom">
+                            <div class="col-lg-12">
+                                <ul class="nav nav-pills nav-justified">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="pill" href="#description">Description</a>
+                                    </li>
+                                    <li class="nav-item">
+                                            <a class="nav-link" data-toggle="pill" href="#description">Video</a>
+                                        </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="pill" href="#specification">Size & Spec</a>
+                                    </li>
+                                    <li class="nav-item">
+                                            <a class="nav-link" data-toggle="pill" href="#reviews">Delivery & Returns</a>
+                                        </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="pill" href="#reviews">Reviews (1)</a>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content">
+                                    <div id="description" class="container tab-pane active">
+                                        <h4>Product description</h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum quam ac mi viverra dictum. In efficitur ipsum diam, at dignissim lorem tempor in. Vivamus tempor hendrerit finibus. Nulla tristique viverra nisl, sit amet bibendum ante suscipit non. Praesent in faucibus tellus, sed gravida lacus. Vivamus eu diam eros. Aliquam et sapien eget arcu rhoncus scelerisque. Suspendisse sit amet neque neque. Praesent suscipit et magna eu iaculis. Donec arcu libero, commodo ac est a, malesuada finibus dolor. Aenean in ex eu velit semper fermentum. In leo dui, aliquet sit amet eleifend sit amet, varius in turpis. Maecenas fermentum ut ligula at consectetur. Nullam et tortor leo. 
+                                        </p>
+                                    </div>
+                                    <div id="specification" class="container tab-pane fade">
+                                        <h4>Product specification</h4>
+                                        <ul>
+                                            <li>Lorem ipsum dolor sit amet</li>
+                                            <li>Lorem ipsum dolor sit amet</li>
+                                            <li>Lorem ipsum dolor sit amet</li>
+                                            <li>Lorem ipsum dolor sit amet</li>
+                                            <li>Lorem ipsum dolor sit amet</li>
+                                        </ul>
+                                    </div>
+                                    <div id="reviews" class="container tab-pane fade">
+                                        <div class="reviews-submitted">
+                                            <div class="reviewer">Phasellus Gravida - <span>01 Jan 2020</span></div>
+                                            <div class="ratting">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                            <p>
+                                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+                                            </p>
+                                        </div>
+                                        <div class="reviews-submit">
+                                            <h4>Give your Review:</h4>
+                                            <div class="ratting">
+                                                <i class="far fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <div class="row form">
+                                                <div class="col-sm-6">
+                                                    <input type="text" placeholder="Name">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <input type="email" placeholder="Email">
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <textarea placeholder="Review"></textarea>
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <button>Submit</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product">
+                            <div class="section-header">
+                                <h1>Related Products</h1>
+                            </div>
+
+                            <div class="row align-items-center product-slider product-slider-3">
+                                <div class="col-md-2">
+                                    <figure class="card card-product-grid">
+                                        <div class="img-wrap"> 
+                                            <span class="badge badge-danger"> NEW </span>
+                                            <img src="img/refirigitator/Water Cooler - 1 Tap.jpg">
+                                            <a class="btn-overlay" href="#"><i class="fa fa-search-plus"></i> Quick view</a>
+                                        </div> <!-- img-wrap.// -->
+                                        <figcaption class="info-wrap">
+                                            <div class="fix-height">
+                                                <a href="#" class="title">Great item name goes here</a>
+                                                <div class="price-wrap mt-2">
+                                                    <span class="price">$1280</span>
+                                                    <del class="price-old">$1980</del>
+                                                    <ul class="rating-stars float-right">
+                                                        <li  class="stars-active"> 
+                                                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                                                            <i class="fa fa-star"></i>  
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                                                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                                                            <i class="fa fa-star"></i> 
+                                                        </li>
+                                                       
+                                                        
+                                                    </ul>
+                                                </div> <!-- price-wrap.// -->
+                                            </div>
+                                            <span class="wislist-icon"> <a href="#" class="btn btn-block btn-primary"><i
+                                                class="fa fa-heart"></i>Add to Wishlist</a></span>
+                                    <span class="cart-icon"> <a href="#" class="btn btn-block btn-primary"><i
+                                                class="fa fa-shopping-cart"></i>Add to Cart</a></span>
+                                        </figcaption>
+                                    </figure>
+                                </div> <!-- col.// -->
+                                <div class="col-md-2">
+                                    <figure class="card card-product-grid">
+                                        <div class="img-wrap"> 
+                                            <span class="badge badge-danger"> NEW </span>
+                                            <img src="img/refirigitator/Water Cooler - 1 Tap.jpg">
+                                            <a class="btn-overlay" href="#"><i class="fa fa-search-plus"></i> Quick view</a>
+                                        </div> <!-- img-wrap.// -->
+                                        <figcaption class="info-wrap">
+                                            <div class="fix-height">
+                                                <a href="#" class="title">Great item name goes here</a>
+                                                <div class="price-wrap mt-2">
+                                                    <span class="price">$1280</span>
+                                                    <del class="price-old">$1980</del>
+                                                    <ul class="rating-stars float-right">
+                                                        <li  class="stars-active"> 
+                                                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                                                            <i class="fa fa-star"></i>  
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                                                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                                                            <i class="fa fa-star"></i> 
+                                                        </li>
+                                                       
+                                                        
+                                                    </ul>
+                                                </div> <!-- price-wrap.// -->
+                                            </div>
+                                            <span class="wislist-icon"> <a href="#" class="btn btn-block btn-primary"><i
+                                                class="fa fa-heart"></i>Add to Wishlist</a></span>
+                                    <span class="cart-icon"> <a href="#" class="btn btn-block btn-primary"><i
+                                                class="fa fa-shopping-cart"></i>Add to Cart</a></span>
+                                        </figcaption>
+                                    </figure>
+                                </div> <!-- col.// -->
+                                <div class="col-md-2">
+                                    <figure class="card card-product-grid">
+                                        <div class="img-wrap"> 
+                                            <span class="badge badge-danger"> NEW </span>
+                                            <img src="img/refirigitator/Water Cooler - 1 Tap.jpg">
+                                            <a class="btn-overlay" href="#"><i class="fa fa-search-plus"></i> Quick view</a>
+                                        </div> <!-- img-wrap.// -->
+                                        <figcaption class="info-wrap">
+                                            <div class="fix-height">
+                                                <a href="#" class="title">Great item name goes here</a>
+                                                <div class="price-wrap mt-2">
+                                                    <span class="price">$1280</span>
+                                                    <del class="price-old">$1980</del>
+                                                </div> <!-- price-wrap.// -->
+                                            </div>
+                                            <span class="wislist-icon"> <a href="#" class="btn btn-block btn-primary"><i
+                                                class="fa fa-heart"></i>Add to Wishlist</a></span>
+                                    <span class="cart-icon"> <a href="#" class="btn btn-block btn-primary"><i
+                                                class="fa fa-shopping-cart"></i>Add to Cart</a></span>
+                                        </figcaption>
+                                    </figure>
+                                </div> <!-- col.// -->
+                                <div class="col-md-2">
+                                    <figure class="card card-product-grid">
+                                        <div class="img-wrap"> 
+                                            <span class="badge badge-danger"> NEW </span>
+                                            <img src="img/refirigitator/Water Cooler - 1 Tap.jpg">
+                                            <a class="btn-overlay" href="#"><i class="fa fa-search-plus"></i> Quick view</a>
+                                        </div> <!-- img-wrap.// -->
+                                        <figcaption class="info-wrap">
+                                            <div class="fix-height">
+                                                <a href="#" class="title">Great item name goes here</a>
+                                                <div class="price-wrap mt-2">
+                                                    <span class="price">$1280</span>
+                                                    <del class="price-old">$1980</del>
+                                                    <ul class="rating-stars float-right">
+                                                        <li  class="stars-active"> 
+                                                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                                                            <i class="fa fa-star"></i>  
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                                                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                                                            <i class="fa fa-star"></i> 
+                                                        </li>
+                                                       
+                                                        
+                                                    </ul>
+                                                </div> <!-- price-wrap.// -->
+                                            </div>
+                                            <span class="wislist-icon"> <a href="#" class="btn btn-block btn-primary"><i
+                                                class="fa fa-heart"></i>Add to Wishlist</a></span>
+                                    <span class="cart-icon"> <a href="#" class="btn btn-block btn-primary"><i
+                                                class="fa fa-shopping-cart"></i>Add to Cart</a></span>
+                                        </figcaption>
+                                    </figure>
+                                </div> <!-- col.// -->
+                                <div class="col-md-2">
+                                    <figure class="card card-product-grid">
+                                        <div class="img-wrap"> 
+                                            <span class="badge badge-danger"> NEW </span>
+                                            <img src="img/refirigitator/Water Cooler - 1 Tap.jpg">
+                                            <a class="btn-overlay" href="#"><i class="fa fa-search-plus"></i> Quick view</a>
+                                        </div> <!-- img-wrap.// -->
+                                        <figcaption class="info-wrap">
+                                            <div class="fix-height">
+                                                <a href="#" class="title">Great item name goes here</a>
+                                                <div class="price-wrap mt-2">
+                                                    <span class="price">$1280</span>
+                                                    <del class="price-old">$1980</del>
+                                                    <ul class="rating-stars float-right">
+                                                        <li  class="stars-active"> 
+                                                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                                                            <i class="fa fa-star"></i>  
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                                                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                                                            <i class="fa fa-star"></i> 
+                                                        </li>
+                                                       
+                                                        
+                                                    </ul>
+                                                </div> <!-- price-wrap.// -->
+                                            </div>
+                                            <span class="wislist-icon"> <a href="#" class="btn btn-block btn-primary"><i
+                                                class="fa fa-heart"></i>Add to Wishlist</a></span>
+                                    <span class="cart-icon"> <a href="#" class="btn btn-block btn-primary"><i
+                                                class="fa fa-shopping-cart"></i>Add to Cart</a></span>
+                                        </figcaption>
+                                    </figure>
+                                </div> <!-- col.// -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Product Detail End -->
+        <!-- Footer Start -->
+        <div class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+    
+                            <div class="col-lg-2 col-md-4">
+                                    <div class="footer-widget">
+                                        <h4>AIR CONDITIONER</h4>
+                                        <ul>
+                                                <li><a href="#">Samsung</a></li>
+                                                <li><a href="#">LG</a></li>
+                                                <li><a href="#">Whirpool</a></li>
+                                                <li><a href="#">Daikine</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4">
+                                        <div class="footer-widget">
+                                                <h4>OUT DOOR KITCHEN</h4>
+                                            <ul>
+                                                    <li><a href="#">Built in Grills</a></li>
+                                                    <li><a href="#">Freestanding Grills</a></li>
+                                                    <li><a href="#">Portable grills</a></li>
+                                                    <li><a href="#">Port Mount Grills</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                        <div class="col-lg-2 col-md-4">
+                            <div class="footer-widget">
+                                    <h4>REFRIGITATOR</h4>
+                                <ul>
+                                        <li><a href="#">Samsung</a></li>
+                                        <li><a href="#">LG</a></li>
+                                        <li><a href="#">Whirpool</a></li>
+                                        <li><a href="#">Daikine</a></li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-2 col-md-4">
+                            <div class="footer-widget">
+                                    <h4>DISH WASHER</h4>
+                                <ul>
+                                        <li><a href="#">Built in Dishwashers</a></li>
+                                        <li><a href="#">Portable Dishwashers</a></li>
+                                        <li><a href="#">Food Disposers</a></li>
+                                        <li><a href="#">Trash Compactors</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4">
+                                <div class="footer-widget">
+                                        <h4>SMART APPLIANCE</h4>
+                                    <ul>
+                                            <li><a href="#">Smart Cooking</a></li>
+                                            <li><a href="#">Smart Refrigitators</a></li>
+                                            <li><a href="#">Smart Dishwashers</a></li>
+                                            <li><a href="#">Smart Dryers</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4">
+                                    <div class="footer-widget">
+                                            <h4>FIND YOUR ORDER</h4>
+                                        <ul>
+                                                <li><a href="#">Tracking</a></li>
+                                                <li><a href="#">Shipping</a></li>
+                                                <li><a href="#">Payment</a></li>
+                                                <li><a href="#">Lifetime Guarantee</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                           
+                    </div>
+                    
+                    <div class="row payment align-items-center">
+                        <div class="col-md-6">
+                            <div class="payment-method">
+                                <h2>We Accept:</h2>
+                                <img src="img/payment-method.png" alt="Payment Method" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="payment-security">
+                                <h2>Secured By:</h2>
+                                <img src="img/godaddy.svg" alt="Payment Security" />
+                                <img src="img/norton.svg" alt="Payment Security" />
+                                <img src="img/ssl.svg" alt="Payment Security" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+            
+            <!-- Footer Bottom Start -->
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 copyright">
+                            <p>Copyright &copy; <a href="#">ALHasawi</a>. All Rights Reserved</p>
+                        </div>
+    
+                        <div class="col-md-6 template-by">
+                            <p>Template By <a href="#">ALHasawi</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Bottom End -->       
+        
+        <!-- Back to Top -->
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/slick/slick.min.js"></script>
+        
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
